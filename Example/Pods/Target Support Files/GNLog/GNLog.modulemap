@@ -1,0 +1,6 @@
+framework module GNLog {
+  umbrella header "GNLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
