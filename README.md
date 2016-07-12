@@ -1,4 +1,4 @@
-# GNExceptions
+# GNLog
 
 [![CI Status](http://img.shields.io/travis/games-neox/GNLog.svg?style=flat)](https://travis-ci.org/games-neox/GNLog)
 [![Version](https://img.shields.io/cocoapods/v/GNLog.svg?style=flat)](http://cocoapods.org/pods/GNLog)

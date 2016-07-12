@@ -1,6 +1,6 @@
 {
   "name": "GNLog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Logging utility for Objective-C/Swift",
   "homepage": "https://github.com/games-neox/GNLog",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/games-neox/GNLog.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

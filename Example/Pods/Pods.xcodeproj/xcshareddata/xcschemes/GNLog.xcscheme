@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D491F1A3A69D17163A8798AB'
+               BlueprintIdentifier = '87DE37D15ED478A51D884FFE'
                BlueprintName = 'GNLog'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'GNLog.framework'>
