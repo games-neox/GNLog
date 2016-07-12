@@ -80,8 +80,8 @@ extern NSString* kObjCLogLevelDebug;
 
 #define LOG_WRITE_VERBOSE(TAG,TEXT)                 { (void) (TAG); (void) (TEXT); }
 #define LOG_WRITE_DEBUG(TAG,TEXT)                   { (void) (TAG); (void) (TEXT); }
-#define LOG_WRITE_INFO(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCppLogLevelInfo, TAG, TEXT)
-#define LOG_WRITE_WARN(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCppLogLevelWarn, TAG, TEXT)
-#define LOG_WRITE_ERROR(TAG,TEXT)                   OBJC_INTERNAL_LOG_WRITE(kObjCppLogLevelError, TAG, TEXT)
+#define LOG_WRITE_INFO(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelInfo, TAG, TEXT)
+#define LOG_WRITE_WARN(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelWarn, TAG, TEXT)
+#define LOG_WRITE_ERROR(TAG,TEXT)                   OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelError, TAG, TEXT)
 
 #endif // DEBUG
