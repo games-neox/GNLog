@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GNLog_Tests' do
+  pod 'GNLog', :path => '../'
+  
+  
+end
