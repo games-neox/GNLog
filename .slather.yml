@@ -1,4 +1,5 @@
 ci_service: travis_ci
 coverage_service: coveralls
-xcodeproj: Example/GNLog.xcworkspace
+scheme: GNLog-Example
 source_directory: GNLog/Classes
+workspace: Example/GNLog.xcworkspace
