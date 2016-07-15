@@ -3,3 +3,4 @@ coverage_service: coveralls
 scheme: GNLog-Example
 source_directory: GNLog/Classes
 workspace: Example/GNLog.xcworkspace
+xcodeproj: Example/GNLog.xcodeproj
