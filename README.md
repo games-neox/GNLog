@@ -15,7 +15,7 @@ Log levels visible in `debug` builds: `VERBOSE`, `DEBUG`, `INFO`, `WARN`, `ERROR
 
 `Swift`-dedicated functions: `logWrite*`, e.g.:  
 `logWriteInfo("LOG_TAG", "TEXT")`  
-`logWriteWarn("LOG_TAG", "TEXT FORMAT:\("TEXT FORMAT")")`  
+`logWriteWarn("LOG_TAG", "TEXT FORMAT:\("TEXT PARAMETER")")`  
 
 ## Example
 
