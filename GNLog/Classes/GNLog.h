@@ -69,8 +69,10 @@ extern NSString* kObjCLogLevelDebug;
 
 #else // DEBUG
 
-#define LOG_PRINT_VERBOSE(TAG,TEXT,...)             { (void) (TAG); (void) (TEXT); }
-#define LOG_PRINT_DEBUG(TAG,TEXT,...)               { (void) (TAG); (void) (TEXT); }
+#define GNLOG_INTERNAL_UNUSED(param)                { (void) (param); }
+
+#define LOG_PRINT_VERBOSE(TAG,TEXT,...)             { GNLOG_INTERNAL_UNUSED(TAG); GNLOG_INTERNAL_UNUSED(TEXT); }
+#define LOG_PRINT_DEBUG(TAG,TEXT,...)               { GNLOG_INTERNAL_UNUSED(TAG); GNLOG_INTERNAL_UNUSED(TEXT); }
 #define LOG_PRINT_INFO(TAG,TEXT,...)                OBJC_INTERNAL_LOG_PRINT( \
                                                             kObjCLogLevelInfo, TAG, TEXT, __VA_ARGS__)
 #define LOG_PRINT_WARN(TAG,TEXT,...)                OBJC_INTERNAL_LOG_PRINT( \
@@ -78,8 +80,8 @@ extern NSString* kObjCLogLevelDebug;
 #define LOG_PRINT_ERROR(TAG,TEXT,...)               OBJC_INTERNAL_LOG_PRINT( \
                                                             kObjCLogLevelError, TAG, TEXT, __VA_ARGS__)
 
-#define LOG_WRITE_VERBOSE(TAG,TEXT)                 { (void) (TAG); (void) (TEXT); }
-#define LOG_WRITE_DEBUG(TAG,TEXT)                   { (void) (TAG); (void) (TEXT); }
+#define LOG_WRITE_VERBOSE(TAG,TEXT)                 { GNLOG_INTERNAL_UNUSED(TAG); GNLOG_INTERNAL_UNUSED(TEXT); }
+#define LOG_WRITE_DEBUG(TAG,TEXT)                   { GNLOG_INTERNAL_UNUSED(TAG); GNLOG_INTERNAL_UNUSED(TEXT); }
 #define LOG_WRITE_INFO(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelInfo, TAG, TEXT)
 #define LOG_WRITE_WARN(TAG,TEXT)                    OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelWarn, TAG, TEXT)
 #define LOG_WRITE_ERROR(TAG,TEXT)                   OBJC_INTERNAL_LOG_WRITE(kObjCLogLevelError, TAG, TEXT)
