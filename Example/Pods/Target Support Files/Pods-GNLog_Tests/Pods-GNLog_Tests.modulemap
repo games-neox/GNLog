@@ -1,6 +1,0 @@
-framework module Pods_GNLog_Tests {
-  umbrella header "Pods-GNLog_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

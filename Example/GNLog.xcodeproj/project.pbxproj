@@ -12,7 +12,7 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		93DE106F4C427FADAA30721F /* Pods_GNLog_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3830AED48F69375AFCA82C /* Pods_GNLog_Tests.framework */; };
+		D7B310D92D927936107A6CAF /* libPods-GNLog_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCCF1BF8F64EFA71A91F204 /* libPods-GNLog_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7E6AEA5065B2B48FCFDDF9A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		86A73A50B9751F530AD5FE68 /* GNLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GNLog.podspec; path = ../GNLog.podspec; sourceTree = "<group>"; };
-		9B3830AED48F69375AFCA82C /* Pods_GNLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11356B3847AF705180F01A8 /* Pods-GNLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNLog_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNLog_Tests/Pods-GNLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACCCF1BF8F64EFA71A91F204 /* libPods-GNLog_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNLog_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9621C22BD8CB8FD23BFF2FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				93DE106F4C427FADAA30721F /* Pods_GNLog_Tests.framework in Frameworks */,
+				D7B310D92D927936107A6CAF /* libPods-GNLog_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				9B3830AED48F69375AFCA82C /* Pods_GNLog_Tests.framework */,
+				ACCCF1BF8F64EFA71A91F204 /* libPods-GNLog_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,6 +346,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNLog_Example.app/GNLog_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -364,6 +365,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNLog_Example.app/GNLog_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
