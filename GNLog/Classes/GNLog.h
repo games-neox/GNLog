@@ -10,11 +10,11 @@
 
 
 
-void logWriteVerbose(NSString* tag, NSString* text);
-void logWriteDebug(NSString* tag, NSString* text);
-void logWriteInfo(NSString* tag, NSString* text);
-void logWriteWarn(NSString* tag, NSString* text);
-void logWriteError(NSString* tag, NSString* text);
+void logWriteVerbose(const NSString* const tag, const NSString* const text);
+void logWriteDebug(const NSString* const tag, const NSString* const text);
+void logWriteInfo(const NSString* const tag, const NSString* const text);
+void logWriteWarn(const NSString* const tag, const NSString* const text);
+void logWriteError(const NSString* const tag, const NSString* const text);
 
 
 #ifdef DEBUG
@@ -41,14 +41,14 @@ void logWriteError(NSString* tag, NSString* text);
                                                     }
 #endif // DEBUG
 
-extern NSString* kObjCLogLevelInfo;
-extern NSString* kObjCLogLevelWarn;
-extern NSString* kObjCLogLevelError;
+extern const NSString* const kObjCLogLevelInfo;
+extern const NSString* const kObjCLogLevelWarn;
+extern const NSString* const kObjCLogLevelError;
 
 #ifdef DEBUG
 
-extern NSString* kObjCLogLevelVerbose;
-extern NSString* kObjCLogLevelDebug;
+extern const NSString* const kObjCLogLevelVerbose;
+extern const NSString* const kObjCLogLevelDebug;
 
 #define LOG_PRINT_VERBOSE(TAG,TEXT,...)             OBJC_INTERNAL_LOG_PRINT( \
                                                             kObjCLogLevelVerbose, TAG, TEXT, __VA_ARGS__)

@@ -10,31 +10,31 @@
 
 
 
-void logWriteVerbose(NSString* tag, NSString* text)
+void logWriteVerbose(const NSString* const tag, const NSString* const text)
 {
     LOG_WRITE_VERBOSE(tag, text);
 }
 
 
-void logWriteDebug(NSString* tag, NSString* text)
+void logWriteDebug(const NSString* const tag, const NSString* const text)
 {
     LOG_WRITE_DEBUG(tag, text);
 }
 
 
-void logWriteInfo(NSString* tag, NSString* text)
+void logWriteInfo(const NSString* const tag, const NSString* const text)
 {
     LOG_WRITE_INFO(tag, text);
 }
 
 
-void logWriteWarn(NSString* tag, NSString* text)
+void logWriteWarn(const NSString* const tag, const NSString* const text)
 {
     LOG_WRITE_WARN(tag, text);
 }
 
 
-void logWriteError(NSString* tag, NSString* text)
+void logWriteError(const NSString* const tag, const NSString* const text)
 {
     LOG_WRITE_ERROR(tag, text);
 }
@@ -42,11 +42,11 @@ void logWriteError(NSString* tag, NSString* text)
 
 #ifdef DEBUG
 
-NSString* kObjCLogLevelVerbose = @"V";
-NSString* kObjCLogLevelDebug = @"D";
+const NSString* const kObjCLogLevelVerbose = @"V";
+const NSString* const kObjCLogLevelDebug = @"D";
 
 #endif // DEBUG
 
-NSString* kObjCLogLevelInfo = @"I";
-NSString* kObjCLogLevelWarn = @"W";
-NSString* kObjCLogLevelError = @"E";
+const NSString* const kObjCLogLevelInfo = @"I";
+const NSString* const kObjCLogLevelWarn = @"W";
+const NSString* const kObjCLogLevelError = @"E";
