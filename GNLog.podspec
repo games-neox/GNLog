@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 s.name                  = 'GNLog'
-s.version               = '0.4.0'
+s.version               = '0.5.0'
 s.summary               = 'Logging utility for Objective-C/Swift'
 
 s.homepage              = 'https://github.com/games-neox/GNLog'
